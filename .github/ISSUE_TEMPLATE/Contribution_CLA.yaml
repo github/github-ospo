@@ -1,0 +1,62 @@
+name: Open Source Contribution
+description: Report a CLA, CAA, DCO, or other open source contribution
+title: Contribution to 
+body:
+- type: markdown
+  attributes:
+    value: |
+      Use this for open source contributions when being asked to sign a Contributors License Agreement (CLA), Copyright Assignment Agreement (CAA), or Developer's Certificate of Origin (DCO).
+- type: textarea
+  id: document
+  attributes:
+    label: Contribution Document
+    description: Provide a link and PDF copy of the contribution document you are looking to sign. 
+    placeholder: include a link and PDF copy
+  validations:
+    required: true
+- type: textarea
+  id: description
+  attributes:
+    label: Contribution Description
+    description: Provide a description of what you will be contributing, link to PR, and why. 
+  validations:
+    required: true
+- type: dropdown
+  id: small_code_exception
+  attributes:
+    label: Does your contribution meet the MSFT Small Code Exception?
+    description: Your contribution is considered small code if it is a bug fix or trivial patch.  See [MSFT Small Code Exception](https://docs.opensource.microsoft.com/policies/small-code-exception/) for more detail.
+    options:
+      - "Yes"
+      - "No"
+  validations:
+    required: true
+- type: input
+  id: previous_contribution
+  attributes:
+    label: Have other Hubbers signed or been authorized under the same contribition document you are requesting?
+    placeholder: If yes, provide a link to the relevant prior issue.
+  validations:
+    required: false
+- type: input
+  id: impact
+  attributes:
+    label: Are there any reasons why contributing to this project would give pause or have a negative business impact on GitHub?
+  validations:
+    required: true
+- type: input
+  id: timeline
+  attributes:
+    label: Desired timeline
+  validations:
+    required: true
+- type: dropdown
+  id: ccla
+  attributes:
+    label: Is your contribution document a Company Contributor License Agreement (CCLA)?
+    description: If CCLA, please note contributor is responsible for administering and maintaining.
+    options:
+      - "Yes"
+      - "No"
+  validations:
+    required: true

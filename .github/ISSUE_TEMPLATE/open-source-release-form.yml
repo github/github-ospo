@@ -1,0 +1,97 @@
+---
+
+name: Open Source Software (OSS) Release
+description: File an open source release
+title: "Open Source: [org/project]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this open source release form! Please answer all questions in this form to the best of your ability. Questions? Ping us in the [#open-source](https://github.slack.com/archives/C0E266M37) Slack channel. Read the full [open source release policy](https://github.com/github/open-source-releases/blob/main/release-policy.md) and [releasing documentation](https://github.com/github/open-source-releases/blob/main/releasing.md).
+
+         🛑 You do not need to fill out this open source release issue if:
+          * The project is considered a [product release](https://github.com/github/open-source-releases/tree/ashleywolf-release-form#what-if-this-is-also-a-product-feature-release). Instead, create an issue in `github/releases` and cc: `@open-source` team.
+          * You are creating this repository under your personal account (e.g. mikemcquaid/strap) and it's not used by GitHub or related to your work at GitHub.
+
+          🟢 You should fill this issue out if:
+          * You are releasing an open source project related to your work (including field service projects).
+          * You are publishing work related open source code under your personal account (e.g. mikemcquaid/strap) or a GitHub organization
+  - type: dropdown
+    attributes:
+      label: Code and Assets
+      description: Did your team write all the code and create all of the assets you are releasing (images, fonts, documentation, machine learning models, etc.)? If 3rd party code or code from another GitHub team is embedded in your release, you should answer No. If you are using a package manager to install dependencies ignored by version control, you can answer Yes. For licensing questions discuss with `github/legal` and add link to that issue in this issue
+      options:
+        - Yes, all created by my team
+        - No, created by other teams
+  - type: dropdown
+    attributes:
+      label: Data
+      description: Does this project send any data or telemetry back to GitHub? If yes, open an issue in `github/privacy` and link to that issue in this issue
+      options:
+        - Yes, telemetry
+        - No.
+  - type: dropdown
+    attributes:
+      label: Cryptography
+      description: Does the project implement cryptography? If yes, open an issue in `github/oss-legal-review` and link to that issue in this issue
+      options:
+        - Yes, implements cryptography
+        - No.
+  - type: dropdown
+    attributes:
+      label: Project License
+      description: What license will you be releasing with? MIT is GitHub's preferred open source license unless a specific community requires a different license. If not MIT, open an issue in [github/legal](https://github.com/github/legal/issues/new/choose) and link to that issue in this issue
+      options:
+        - MIT License
+        - Other
+  - type: input
+    attributes:
+      label: Repo URL
+      description: Provide the link to the repo URL
+      placeholder: https://github.com/github/project-name
+  - type: textarea
+    attributes:
+      label: Project description
+      description: This information helps others understand what the project does
+      value: |
+        ...
+  - type: textarea
+    attributes:
+      label: Business case
+      description: Describe the business goals that will help others understand the use case(s) for this project
+      value: |
+        ...
+  - type: input
+    attributes:
+      label: Owning Team
+      description: "Name of the team that will own/maintain the project."
+      placeholder: "@github/c2c-actions"
+  - type: checkboxes
+    attributes:
+      label: Prepare Project
+      options:
+        - label: Review and address items in the [release guidelines](https://github.com/github/open-source-releases/blob/main/releasing.md)
+        - label: Ensure the repo has a meaningful description, tags, release, packages, and link when applicable
+        - label: Remove sensitive materials in the revision history, issues, or pull requests
+        - label: "Add LICENSE file (preferred: [MIT LICENSE](https://github.com/github/open-source-releases/blob/main/templates/LICENSE.txt))"
+        - label: Update README.md to include sections seen in [`README.md`](https://github.com/github/open-source-releases/blob/main/templates/README.md)
+        - label: Add and update [`CODEOWNERS`](https://github.com/github/open-source-releases/blob/main/templates/CODEOWNERS) to list maintainers
+        - label: Add and update CONTRIBUTING.md.  Language specific templates are available (e.g. [CONTRIBUTING-ruby.md](https://github.com/github/open-source-releases/blob/main/templates/CONTRIBUTING-ruby.md), [CONTRIBUTING-go.md](https://github.com/github/open-source-releases/blob/main/templates/CONTRIBUTING-go.md))
+        - label: Add and update [SUPPORT.md](https://github.com/github/open-source-releases/blob/main/templates/SUPPORT.md)
+        - label: Add [`CODE_OF_CONDUCT.md`](https://github.com/github/open-source-releases/blob/main/templates/CODE_OF_CONDUCT.md)
+        - label: Add [SECURITY.md](https://github.com/github/open-source-releases/blob/main/templates/SECURITY.md)
+        - label: "Add branch protection rules to secure how branches are used. Examples: Require a pull request before merging; Require approvals on pull requests;"
+  - type: checkboxes
+    attributes:
+      label: Support
+      options:
+        - label: Create a [Service Catalog entry](https://thehub.github.com/engineering/products-and-services/internal/service-catalog/service-ownership/#ownership-snippet)
+        - label: Follow [best practices for maintainers](https://opensource.guide/best-practices/)
+        - label: Join the GitHub maintainer community in [open-source discussions](https://github.com/github/open-source/discussions)
+  - type: checkboxes
+    attributes:
+      label: Ship It
+      options:
+        - label: Reserve your project name on distribution platforms. If your project is Ruby, reserve the Rubygems gem name. If your project is Python, reserve the Pypi project. This will prevent confusion with namesquatting even if you don't plan to publish to these platforms.
+        - label: Publish your project! [Open an issue in github/security-iam](https://github.com/github/security-iam/issues/new) referencing this github/open-source-releases issue with a request to switch the repo visibility to public.
+        - label: Share your project! Post in `#open-source`, on your personal social channels, and the [GitHub Engineering blog](https://github.com/github/githubengineering).
