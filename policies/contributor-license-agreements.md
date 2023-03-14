@@ -4,7 +4,7 @@
 When a project receives a contribution, it must be clear that both the contributor has the rights to contribute the content, and that the project then has the rights to use and otherwise operate with the content (e.g., relicense or distribute). A Contributor License Agreement (CLA) is a legal document establishing these rights and defines the terms under which a license is granted by a contributor to an open source project. A CLA clarifies that any contribution was authorized (not contributing someone else’s code without permission or there is a legal authority to contribute), and protects the project from potential future legal challenges. Not all projects will require a CLA but should one be required to contribute to a project, you will likely be asked to sign an Individual Contributors License Agreement or Corporate Contributor License. The most common CLA text is based on the [Apache Software Foundation’s CLA](https://www.apache.org/licenses/contributor-agreements.html) and most CLAs will follow its template.
 
 ## GitHub perspective
-We choose not to utilize CLA's on our own GitHub open source repositories. For more on the history and rationale behind that, check out https://ben.balter.com/2018/01/02/why-you-probably-shouldnt-add-a-cla-to-your-open-source-project/.
+We choose not to utilize CLAs on our own GitHub open source repositories. For more on the history and rationale behind that, check out https://ben.balter.com/2018/01/02/why-you-probably-shouldnt-add-a-cla-to-your-open-source-project/.
 
 ## ICLA v. CCLA
 ### ICLA
