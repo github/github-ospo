@@ -31,7 +31,7 @@ GitHub OSPO team
 
 ### Contributions
 
-We welcome all contributions. Please open an issue in the repo.
+We welcome all contributions. Please open an issue in the repo or fork, edit, and open a pull request.
 
 ### License
 
