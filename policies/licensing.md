@@ -15,9 +15,9 @@ This document answers "which license?"
 
 Default: MIT
 
-For most substantial GitHub open source software projects, there's a simple default answer: [MIT](http://choosealicense.com/licenses/mit/). MIT is the [most popular license](https://github.com/blog/1964-open-source-license-usage-on-github-com) for public open source projects on github.com. It has great cultural acceptance and is simple to understand, use, and comply with:
+For most substantial GitHub open source software projects, there's a simple default answer: [MIT](https://choosealicense.com/licenses/mit/). MIT is the [most popular license](https://github.com/blog/1964-open-source-license-usage-on-github-com) for public open source projects on github.com. It has great cultural acceptance and is simple to understand, use, and comply with:
 
-* Add a LICENSE.md file with the MIT license text and GitHub copyright notice: "Copyright (c) 2016 GitHub". You can do this via the web interface (a license picker will automatically appear when you add a new file called LICENSE.md) or by copying the license text from http://choosealicense.com/licenses/mit
+* Add a LICENSE.md file with the MIT license text and GitHub copyright notice: "Copyright (c) 2016 GitHub". You can do this via the web interface (a license picker will automatically appear when you add a new file called LICENSE.md) or by copying the license text from https://choosealicense.com/licenses/mit
 * Keep that LICENSE.md file and copyright notice in any modified versions.
 
 If you feel that MIT is really the wrong license for a substantial GitHub open source project, let's talk: XXX.
@@ -31,7 +31,7 @@ Occasionally we publish substantial non-software content (e.g., documentation, m
 To use CC-BY-4.0:
 
 * In the case an entire repository should be released under CC-BY-4.0: Add a LICENSE.md file with the CC-BY-4.0 license text. It is unlikely you will want to do this, and it is not facilitated by the web interface license picker. The license text is available at https://creativecommons.org/licenses/by/4.0/legalcode.txt but check with @github/open-source to ensure this is what you really want.
-* In the case particular files or parts of content (e.g., documentation or a media file) should be released under CC-BY-4.0, note this precisely in the repository's README.md ([example](XXX).
+* In the case particular files or parts of content (e.g., documentation or a media file) should be released under CC-BY-4.0, note this precisely in the repository's README.md ([example](XXX)).
 * If the released material is rendered or published, e.g., as or in web pages, it can also be useful to include a CC-BY-4.0 notice there, e.g., "This documentation is released under CC-BY-4.0", with a link to https://creativecommons.org/licenses/by/4.0/ or the repository README.md#Licenses depending on the complexity of the situation. Please ask @github/open-source for help getting it right.
 * To use material under CC-BY-4.0, license notice and attribution must be preserved. It can be useful to provide an example of how to do so ([example](XXX)).
 
@@ -43,7 +43,7 @@ Default: CC0-1.0
 
 MIT and CC-BY-4.0 conditions are easy to comply with, but sometimes projects are better served by not having any conditions, not even a requirement for attribution.
 
-[CC0-1.0](http://choosealicense.com/licenses/cc0-1.0/) waives all copyright restrictions but reserves trademark and patent rights, making it an easy unconditional license for GitHub material when:
+[CC0-1.0](https://choosealicense.com/licenses/cc0-1.0/) waives all copyright restrictions but reserves trademark and patent rights, making it an easy unconditional license for GitHub material when:
 
 * burden to user of maintaining copyright notices forever is large relative to incremental value of using licensed material, and
 * there is no demonstrable business value from mandating maintenance of copyright notices
@@ -58,14 +58,14 @@ Examples:
 
 To use CC0-1.0:
 
-* In the case an entire repository should be released under CC0-1.0: Add a LICENSE.md file with the CC0-1.0 license text. You can do this via the web interface (a license picker will automatically appear when you add a new file called LICENSE.md) or by copying the license text from http://choosealicense.com/licenses/cc0-1.0
+* In the case an entire repository should be released under CC0-1.0: Add a LICENSE.md file with the CC0-1.0 license text. You can do this via the web interface (a license picker will automatically appear when you add a new file called LICENSE.md) or by copying the license text from https://choosealicense.com/licenses/cc0-1.0
 * In the case particular files or parts of content (e.g., code snippets in documentation) should be released under CC0-1.0, note this precisely in the repository's README.md ([example](XXX)).
 * If the released material is rendered or published, e.g., as or in web pages, it can also be useful to include a CC0-1.0 notice there, e.g., "Code samples in this documentation are released under CC0-1.0", with a link to https://creativecommons.org/publicdomain/zero/1.0/ or the repository README.md#Licenses depending on the complexity of the situation. Please ask @github/open-source for help getting it right.
 * Note there are zero copyright license requirements when using material released under CC0-1.0, but it is usually best practice to maintain license notices and attribution anyway, as you would for MIT and CC-BY software and non-software above.
 
 Have questions about whether what you're working on matches one of the above example classes and meets the two criteria above, or feel that CC0-1.0 isn't the right license for those cases? Let's talk: XXX.
 
-Note that there are several other unconditional license options, including the Unlicense, Free Public License 1.0.0/0BSD, WTFPL, and ad hoc public domain dedications. CC0-1.0 is the preferred unconditional license for GitHub projects (see trademark and patents above), it isn't necessarily the right choice for substantial open source projects that want to use an unconditional license (in particular because of its explicit exclusion of any patent grant). That's why choosealicense.com's [unconditional/public domain categroy](http://choosealicense.com/licenses/) still defaults to Unlicense, and may in the future default to the Open Source Initiative [approved](https://opensource.org/licenses/FPL-1.0.0) Free Public License 1.0.0. Detailed discussion of unconditional licenses in XXX.
+Note that there are several other unconditional license options, including the Unlicense, Free Public License 1.0.0/0BSD, WTFPL, and ad hoc public domain dedications. CC0-1.0 is the preferred unconditional license for GitHub projects (see trademark and patents above), it isn't necessarily the right choice for substantial open source projects that want to use an unconditional license (in particular because of its explicit exclusion of any patent grant). That's why choosealicense.com's [unconditional/public domain category](https://choosealicense.com/licenses/) still defaults to Unlicense, and may in the future default to the Open Source Initiative [approved](https://opensource.org/licenses/FPL-1.0.0) Free Public License 1.0.0. Detailed discussion of unconditional licenses in XXX.
 
 ## Non-GitHub projects
 

@@ -4,7 +4,7 @@ GitHub encourages you to release code as an open source project. The [Release Po
 The following steps should be taken to release and maintain your open source project using the MIT license:
 
 1. **Register your release**. Create an issue in the XXX repo to register your intended release.
-2. **Name your project** Check that it does [not conflict with an existing project](http://ivantomic.com/projects/ospnc/) or infringe on any [trademarks](http://www.uspto.gov).
+2. **Name your project** Check that it does [not conflict with an existing project](http://ivantomic.com/projects/ospnc/) or infringe on any [trademarks](https://www.uspto.gov).
 3. **Include the following in the root directory**. The folder with the templates is available [here](../release%20template).
     * **README.md file** describing the purpose and state of the repository, A good README file is often 
         critical to project success this is also a good place to put any top-level and important information for newcomers to your project.
