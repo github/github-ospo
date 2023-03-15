@@ -1,13 +1,14 @@
-<img src="https://github.blog/wp-content/uploads/2020/03/github-open-source-erica.jpeg?resize=640%2C344" />
+![](/images/github-open-source-erica.jpeg)
 
 # github-ospo
+
 Helping open source program offices get started
 
 The purpose of this repo is to enable new OSPOs to be successful on GitHub. On behalf of the GitHub OSPO we are sharing our policies, tools, and best practices to guide you through the first 6-12 months of your organization's open source journey. There are also other OSPO guides and resources available through [TODO](https://todogroup.org/) & [OSPO Alliance](https://ospo.zone/) as well as [opensource.guide](https://opensource.guide/). This repo will focus on GitHub related tools and content.
 
 ## Adopting and adapting
 
-Feel free to use, modify, and adopt these policies, procedures, and guides. They are open source! :tada: If you are adopting them, run through and do a quick search for `XXX`. We have used that as a placeholder value where our policies point to internal only documentation. Also search for the `@` so that you can update any email addresses with the proper ones for your company. 
+Feel free to use, modify, and adopt these policies, procedures, and guides. They are open source! :tada: If you are adopting them, run through and do a quick search for `XXX`. We have used that as a placeholder value where our policies point to internal only documentation. Also search for the `@` so that you can update any email addresses with the proper ones for your company.
 
 ## Directory
 
