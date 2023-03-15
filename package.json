@@ -1,0 +1,15 @@
+{
+  "name": "github-ospo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The purpose of this repo is to enable new OSPOs to be successful on GitHub",
+  "scripts": {
+    "fix": "markdownlint-cli2-fix \"**/*.md\" && prettier -w .",
+    "test": "markdownlint-cli2 \"**/*.md\" && prettier -c ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.6.0",
+    "prettier": "^2.8.4"
+  }
+}
