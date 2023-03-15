@@ -1,7 +1,6 @@
+TODO: The maintainer of this repo has not updated this file
 
-# TODO: The maintainer of this repo has not updated this file
-
-# Support 
+# Support
 
 ## How to file issues and get help
 
@@ -12,7 +11,7 @@ For help or questions about using this project, please **TODO:** REPO MAINTAINER
 **TODO: REPO MAINTAINERS** Please include one of the following statements file:
 
 - **THIS PROJECT NAME** is under active development and maintained by GitHub staff **AND THE COMMUNITY**. We will do our best to respond to support, feature requests, and community questions in a timely manner.
-- **THIS PROJECT NAME** is not actively developed but is maintained by GitHub staff **AND THE COMMUNITY**. We will do our best to respond to support and community questions in a timely manner. 
+- **THIS PROJECT NAME** is not actively developed but is maintained by GitHub staff **AND THE COMMUNITY**. We will do our best to respond to support and community questions in a timely manner.
 - **THIS PROJECT NAME** is no longer supported or maintained by GitHub staff. We will not respond to support or community questions.
 - **THIS PROJECT NAME** is archived and deprecated. As an unsupported project, feel free to fork.
 
