@@ -2,7 +2,7 @@
   "config": {
     "default": true,
     "MD013": false, // Ignore line-length
-    "MD045": false,
+    "MD045": false, // Ignore alt text requirement for images
     "MD041": false // Ignore top level header requirement
   },
   "ignores": ["node_modules"]
