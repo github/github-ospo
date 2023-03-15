@@ -8,7 +8,7 @@ The purpose of this repo is to enable new OSPOs to be successful on GitHub. On b
 
 ## Adopting and adapting
 
-Feel free to use, modify, and adopt these policies, procedures, and guides. They are open source! :tada: If you are adopting them, run through and do a quick search for `XXX`. We have used that as a placeholder value where our policies point to internal only documentation. Also search for the `@` so that you can update any email addresses with the proper ones for your company.
+Feel free to use, modify, and adopt these policies, procedures, and guides. They are open source! :tada: If you are adopting them, run through and do a quick search for `XXX`, `<COMPANY_NAME>`, and `<LEGAL_CONTACT>`. We have used those as placeholder values where our policies point to internal only documentation, internal teams, or to GitHub as a company rather than the product. Also search for the `@` so that you can update any email addresses with the proper ones for your company.
 
 ## Directory
 

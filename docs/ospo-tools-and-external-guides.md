@@ -1,6 +1,6 @@
 ## Tools
 
-These are tools published by Hubbers that can be used by OSPOs for managing open source at scale. Please consider adding the OSPO label to GitHub projects that are valuable to open source program office teams and submit a PR to add them to this file.
+These are tools published by employees that can be used by OSPOs for managing open source at scale. Please consider adding the OSPO label to GitHub projects that are valuable to open source program office teams and submit a PR to add them to this file.
 
 ### Project administration
 

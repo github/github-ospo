@@ -4,13 +4,13 @@
 
 These are the objectives for the OSPO newsletter:
 
-- Share recent OSPO activity that are beneficial to Hubbers
+- Share recent OSPO activity that are beneficial to employees
 - Share valuable resources and customer conversations around OSPOs
 - Get a summary of the most recent OSPO news and community events
 
 ## Process
 
 1. `md` file will be added at [newsletter repo](XXX)
-2. Once created, Hubbers can open a PR to add their updates to the file.
+2. Once created, employees can open a PR to add their updates to the file.
 3. Post will be made to open-source team post with link to newsletter
 4. Add newsletter to README

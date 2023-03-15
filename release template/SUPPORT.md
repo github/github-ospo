@@ -10,11 +10,11 @@ For help or questions about using this project, please **XXX:** REPO MAINTAINER 
 
 **XXX: REPO MAINTAINERS** Please include one of the following statements file:
 
-- **THIS PROJECT NAME** is under active development and maintained by GitHub staff **AND THE COMMUNITY**. We will do our best to respond to support, feature requests, and community questions in a timely manner.
-- **THIS PROJECT NAME** is not actively developed but is maintained by GitHub staff **AND THE COMMUNITY**. We will do our best to respond to support and community questions in a timely manner.
-- **THIS PROJECT NAME** is no longer supported or maintained by GitHub staff. We will not respond to support or community questions.
+- **THIS PROJECT NAME** is under active development and maintained by <COMPANY_NAME> staff **AND THE COMMUNITY**. We will do our best to respond to support, feature requests, and community questions in a timely manner.
+- **THIS PROJECT NAME** is not actively developed but is maintained by <COMPANY_NAME> staff **AND THE COMMUNITY**. We will do our best to respond to support and community questions in a timely manner.
+- **THIS PROJECT NAME** is no longer supported or maintained by <COMPANY_NAME> staff. We will not respond to support or community questions.
 - **THIS PROJECT NAME** is archived and deprecated. As an unsupported project, feel free to fork.
 
-## GitHub Support Policy
+## <COMPANY_NAME> Support Policy
 
 Support for this project is limited to the resources listed above.
