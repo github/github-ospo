@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - "dependabot/**"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Formatting checks
+        run: npm test
