@@ -27,10 +27,10 @@ This project is licensed under the terms of the MIT open source license. Please 
 
 ## Maintainers
 
-TODO: Enter at least one maintainer in here or point to codeowners file.
+XXX: Enter at least one maintainer in here or point to codeowners file.
 
 ## Support
 
-TODO: Be explicit about support expectations.
+XXX: Be explicit about support expectations.
 
 ## Acknowledgement
