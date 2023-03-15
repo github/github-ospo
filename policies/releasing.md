@@ -38,7 +38,7 @@ The following steps should be taken to release and maintain your open source pro
      - Ensure the distribution mechanism is as convenient, standard, and low-overhead as possible (RubyGems, Homebrew, Bower, Maven, NuGet, etc.)
      - GitHub Actions based continuous integration that integrates with the status or checks API is ready to be enabled when the repo is made public.
      - Use [inclusive language](XXX) in your project.
-6. **Publish the code**. Once your registration is complete, create an issue in `security-iam` and request that your GitHub repository is public.
+6. **Publish the code**. Once your registration is complete, create an issue in `XXX` repo and request that your GitHub repository is public.
 7. **Going forward**. Ensure:
    - **Staffing**. Ensure at least one team member is committed to managing community interactions merging pull requests, giving feedback, releasing new versions.
    - **Maintaining**. Make your life easier as an open source maintainer, [from documenting processes to leveraging your community](https://opensource.guide/best-practices/).
