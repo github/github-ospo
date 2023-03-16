@@ -19,7 +19,7 @@ It explicitly asks for contributions, if you want them, with a link to CONTRIBUT
 It includes a description of the kind of environment required to run the software and instructions for setting it up.
 It clearly states the external dependencies and directions for installing them.
 
-Be sure to follow the [GitHub logo guidelines](https://github.com/logos).
+Be sure to follow the [<COMPANY_NAME> logo guidelines](XXX).
 
 ## License
 
@@ -27,10 +27,10 @@ This project is licensed under the terms of the MIT open source license. Please 
 
 ## Maintainers
 
-TODO: Enter at least one maintainer in here or point to codeowners file.
+XXX: Enter at least one maintainer in here or point to codeowners file.
 
 ## Support
 
-TODO: Be explicit about support expectations.
+XXX: Be explicit about support expectations.
 
 ## Acknowledgement

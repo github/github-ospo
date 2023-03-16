@@ -1,6 +1,6 @@
 # Releasing an Open Source Project 🛳️
 
-GitHub encourages you to release code as an open source project. The [Release Policy](release-policy.md) details the requirements.  
+<COMPANY_NAME> encourages you to release code as an open source project. The [Release Policy](release-policy.md) details the requirements.  
 The following steps should be taken to release and maintain your open source project using the MIT license:
 
 1. **Register your release**. Create an issue in the XXX repo to register your intended release.
@@ -8,7 +8,7 @@ The following steps should be taken to release and maintain your open source pro
 3. **Include the following in the root directory**. The folder with the templates is available [here](../release%20template).
    - **README.md file** describing the purpose and state of the repository. A good README file is often
      critical to project success. This is also a good place to put any top-level and important information for newcomers to your project.
-   - **LICENSE.txt file** with the MIT license text. Include GitHub, Inc above the copyright statement.
+   - **LICENSE.txt file** with the MIT license text. Include <COMPANY_NAME> above the copyright statement.
    - **CONTRIBUTING.md file** with instructions on contributing to your project.
      - Additionally, consider providing technical guidance like build instructions, coding conventions, or a project roadmap in the `CONTRIBUTING.md` file.
    - **CODE_OF_CONDUCT.md file**
@@ -24,10 +24,10 @@ The following steps should be taken to release and maintain your open source pro
      - If any sensitive content or commit messages are found in commits, consider squashing the revision history.
      - To preserve sensitive history or if you wish the public repo to have zero non-commit history, rename the private repo and create a new blank slate repo with the intended public name and any commit history intended to be public.
    - **Add copyright and license headers (optional)**
-     - It is best practice in many ecosystems to include a copyright statement at the top of each file. Here is one you can use at GitHub:
+     - It is best practice in many ecosystems to include a copyright statement at the top of each file. Here is one you can use at <COMPANY_NAME>:
 
    ```javascript
-   // SPDX-FileCopyrightText: GitHub and others
+   // SPDX-FileCopyrightText: <COMPANY_NAME> and others
    // SPDX-License-Identifier: MIT
    ```
 
