@@ -1,4 +1,4 @@
-![](/images/github-open-source-erica.jpeg)
+![Project banner](/images/github-open-source-erica.jpeg)
 
 # github-ospo
 

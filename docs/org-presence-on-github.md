@@ -6,7 +6,7 @@
 
 If you already have an organization account, you can skip this section. You should make sure that you are signed in to GitHub and then navigate to [https://github.com/organzations/plan](https://github.com/organzations/plan).
 
-![](/images/org-setup.png)
+![Set up organization](/images/org-setup.png)
 
 Take your time to read through the different options and prices for different types of organization accounts. For the purposes of this guide, we will just stick to a free organization account. Now select your organization name which should match the name of the legal entity it represents if possible.
 
@@ -16,11 +16,11 @@ Ownership of the organization is important to note here. Does this organization 
 
 Navigate to `https://github.com/<ORG_NAME>`. Here is an example of what a profile page starts out looking like.
 
-![](/images/chewco-example.png)
+![New profile example](/images/chewco-example.png)
 
 One goal of the open source programs office is to get their profile completed so that people can tell that this is an active and trustworthy organization. See the difference between a new profile and a completed one below.
 
-![](/images/github-example.png)
+![Completed profile example](/images/github-example.png)
 
 While you are logged in, navigate to `https://github.com/organizations/<ORG_NAME>/settings/profile`. This is where you can begin to complete the profile details.
 
