@@ -12,7 +12,7 @@ These are tools published by employees that can be used by OSPOs for managing op
 
 - [License compliance - A Ruby Gem to detect under what license a project is distributed](https://github.com/licensee/licensee)
 - [Licensed: A Ruby gem to cache and verify the licenses of dependencies](https://github.com/github/licensed)
-- [GitHub Action: Allow users to configure their risk threshold for security issues reported by GitHub Code Scanning, Secret Scanning and Dependabot Security.](https://github.com/marketplace/actions/ghas-policy-as-code) 
+- [GitHub Action: Allow users to configure their risk threshold for security issues reported by GitHub Code Scanning, Secret Scanning and Dependabot Security.](https://github.com/marketplace/actions/ghas-policy-as-code)
 - [Safe Settings - an app to manage policy-as-code and apply repository settings to repositories across an organization.](https://github.com/github/safe-settings)
 
 ### User administration
