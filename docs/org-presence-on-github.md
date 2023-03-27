@@ -4,7 +4,7 @@
 
 ### Organization creation
 
-If you already have an organization account, you can skip this section. You should make sure that you are signed in to GitHub and then navigate to [https://github.com/organzations/plan](https://github.com/organzations/plan).
+If you already have an organization account, you can skip this section. You should make sure that you are signed in to GitHub and then navigate to [https://github.com/organizations/plan](https://github.com/organizations/plan).
 
 ![Set up organization](/images/org-setup.png)
 
