@@ -16,7 +16,7 @@ The Dashboard aims to provide a comprehensive view of an organization's open sou
 
 4. **Ensure best practices**: The Community Standards section provides a set of best practice guidelines for open source projects, covering topics such as code of conduct, licensing, and documentation. This helps OSPOs confirm that their projects have these guidelines in place to safeguard and sustain the community. The filter input box supports the `license:` condition, which allows you to quickly find repositories using licenses that might not be approved by your organization’s legal department.
 
-    ![License filtering results](/images/license-filtering.png)
+   ![License filtering results](/images/license-filtering.png)
 
 5. **Curate open source portfolio**: By analyzing metrics such as the number of code contributions, issue resolution time, and pull request activity for a given repository, OSPOs can determine whether the repository is still being actively developed and maintained, or if it has become stagnant. If a repository is found to be inactive, the OSPO can work with the project's stakeholders to determine whether it should be [archived](https://docs.github.com/en/repositories/archiving-a-github-repository), or if resources should be allocated to help revive it. By proactively identifying repositories that may need to be archived, OSPOs can help ensure that their organization's open source portfolio remains focused and relevant.
 
