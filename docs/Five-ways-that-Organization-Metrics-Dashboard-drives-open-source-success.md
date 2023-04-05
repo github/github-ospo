@@ -1,4 +1,4 @@
-![Octocat taking parts out of a box](/images/octocat-opening-boxjpeg)
+![Octocat taking parts out of a box](/images/octocat-opening-box.jpeg)
 
 Large organizations are increasingly “working in the open”: releasing internal tools and projects as open source. But once they’re out in the world, maintainers often find it difficult to track the health of these projects, especially when there are dozens or hundreds of them. GitHub’s Open Source Program Office (OSPO), in our mission to help other OSPOs and maintainers of independent OSS projects, developed an Organization Metrics Dashboard to address this problem.
 
