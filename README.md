@@ -27,6 +27,7 @@ We have used those as placeholder values where our policies point to internal on
   - [Small code exceptions](./policies/small-code-exception.md)
 - [Guides](./docs)
   - [Archiving repos](./docs/archiving-public-repositories.md)
+  - [Organization Metrics Dashboard](./docs/org-metrics-dashboard.md)
   - [Sponsoring Open Source](./docs/foundations.md)
   - [OSPO Tools & External Guides](./docs/ospo-tools-and-external-guides.md)
   - [Commercial licenses](./docs/commercial-licenses.md)
