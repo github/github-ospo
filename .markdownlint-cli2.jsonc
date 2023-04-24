@@ -2,6 +2,7 @@
   "config": {
     "default": true,
     "MD013": false, // Ignore line-length
+    "MD034": false, // Ignore no-bare-urls
     "MD041": false // Ignore top level header requirement
   },
   "ignores": ["node_modules"]
