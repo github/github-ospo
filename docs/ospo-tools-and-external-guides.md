@@ -15,6 +15,10 @@ These are tools published by employees that can be used by OSPOs for managing op
 - [GitHub Action: Allow users to configure their risk threshold for security issues reported by GitHub Code Scanning, Secret Scanning and Dependabot Security.](https://github.com/marketplace/actions/ghas-policy-as-code)
 - [Safe Settings - an app to manage policy-as-code and apply repository settings to repositories across an organization.](https://github.com/github/safe-settings)
 
+### Policy
+
+- [GitHub's Balanced Employee IP Agreement](https://github.com/github/balanced-employee-ip-agreement) - A policy which balances preserving the ability of employees to work on open source projects with the need to protect GitHub's intellectual property.
+
 ### User administration
 
 - [A simple Oauth app to automatically add users to an organization](https://github.com/benbalter/add-to-org)
