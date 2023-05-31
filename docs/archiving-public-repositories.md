@@ -1,4 +1,4 @@
-We have an archived repositories feature to indicate and make unmaintained repositories read-only.
+GitHub has an archived repositories feature to indicate and make unmaintained repositories read-only. You can pair this feature with an automated report that gives you a list of the inactive repositories that are in your organization. Check out that action on the [GitHub Marketplace](https://github.com/marketplace/actions/stale-repos).
 
 In order to archive a github organization repository:
 
