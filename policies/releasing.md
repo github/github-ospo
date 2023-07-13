@@ -31,7 +31,7 @@ The following steps should be taken to release and maintain your open source pro
    // SPDX-License-Identifier: MIT
    ```
 
-5. **Third-party Open Source**. If your repository vendors third-party OSS which is not managed/vendored by a dependency manager (e.g. `RubyGems`), describe its use and its license in a `NOTICE` file. When in doubt, consult with legal.
+   - **Third-party Open Source**. If your repository vendors third-party OSS which is not managed/vendored by a dependency manager (e.g. `RubyGems`), describe its use and its license in a `NOTICE` file. When in doubt, consult with legal.
    - **Best Practices**.
      - Use consistent code conventions, clear function/method/variable names, and a sensible public API.
      - Keep clear comments, document intentions and edge cases.
