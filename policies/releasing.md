@@ -31,15 +31,16 @@ The following steps should be taken to release and maintain your open source pro
    // SPDX-License-Identifier: MIT
    ```
 
-5. **Third-party Open Source**. If your repository vendors third-party OSS which is not managed/vendored by a dependency manager (e.g. `RubyGems`), describe its use and its license in a `NOTICE` file. When in doubt, consult with legal.
+   - **Third-party Open Source**. If your repository vendors third-party OSS which is not managed/vendored by a dependency manager (e.g. `RubyGems`), describe its use and its license in a `NOTICE` file. When in doubt, consult with legal.
    - **Best Practices**.
      - Use consistent code conventions, clear function/method/variable names, and a sensible public API.
      - Keep clear comments, document intentions and edge cases.
      - Ensure the distribution mechanism is as convenient, standard, and low-overhead as possible (RubyGems, Homebrew, Bower, Maven, NuGet, etc.)
      - GitHub Actions based continuous integration that integrates with the status or checks API is ready to be enabled when the repo is made public.
      - Use [inclusive language](XXX) in your project.
-6. **Publish the code**. Once your registration is complete, create an issue in `XXX` repo and request that your GitHub repository is public.
-7. **Going forward**. Ensure:
+
+5. **Publish the code**. Once your registration is complete, create an issue in `XXX` repo and request that your GitHub repository is public.
+6. **Going forward**. Ensure:
    - **Staffing**. Ensure at least one team member is committed to managing community interactions merging pull requests, giving feedback, releasing new versions.
    - **Maintaining**. Make your life easier as an open source maintainer, [from documenting processes to leveraging your community](https://opensource.guide/best-practices/).
    - **Build welcoming communities**. [Build a community that encourages people](https://opensource.guide/building-community/) to use, contribute to, and share your project.
