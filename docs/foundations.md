@@ -19,7 +19,7 @@ This document is a guide to which foundations we currently support and how to su
 - [OpenJS Foundation](https://openjsf.org/) - Silver member
 - [Open Source Security Foundation (OpenSSF)](https://openssf.org/) - Premier member
 - [Software Heritage](https://www.softwareheritage.org/)
-- [Innersource Commons (ISC)](https://innersourcecommons.org/)
+- [InnerSource Commons (ISC)](https://innersourcecommons.org/)
 - [TODO Group](https://todogroup.org/) - included in Linux Foundation membership
 - [Erlang Ecosystem Foundation (ErlEF)](https://erlef.org/)
 - [Mobile Native Foundation](https://mobilenativefoundation.org/) - In-kind
