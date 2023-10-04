@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this open source release form! Please answer all questions in this form to the best of your ability. Questions? Ping us `here`. Read the full open source release policy and releasing documentation.
+        Thanks for taking the time to fill out this open source release form! Please answer all questions in this form to the best of your ability. Questions? Ping us [here](xxx). Read the full [open source release policy](xxx) and [releasing documentation](xxx).
 
         🛑 You do not need to fill out this open source release issue if:
           * The project is considered a product release that is not open source-related
@@ -21,28 +21,28 @@ body:
   - type: dropdown
     attributes:
       label: Code and Assets
-      description: Did your team write all the code and create all of the assets you are releasing (images, fonts, documentation, machine learning models, etc.)? If 3rd party code or code from another GitHub team is embedded in your release, you should answer No. If you are using a package manager to install dependencies ignored by version control, you can answer Yes. For licensing questions discuss with `github/legal` and add link to that issue in this issue
+      description: Did your team write all the code and create all of the assets you are releasing (images, fonts, documentation, machine learning models, etc.)?  For licensing questions discuss with `github/legal` and add link to that issue in this issue
       options:
         - Yes, all created by my team
         - No, created by other teams
   - type: dropdown
     attributes:
       label: Data
-      description: Does this project send any data or telemetry back to GitHub? If yes, open an issue in `github/privacy` and link to that issue in this issue
+      description: Does this project send any data or telemetry back to GitHub? If yes, open an issue in `[repo](xxx)` and link to that issue in this issue
       options:
         - Yes, telemetry
         - No.
   - type: dropdown
     attributes:
       label: Cryptography
-      description: Does the project implement cryptography? If yes, open an issue in `github/oss-legal-review` and link to that issue in this issue
+      description: Does the project implement cryptography? If yes, open an issue in `[repo](xxx) and link to that issue in this issue
       options:
         - Yes, implements cryptography
         - No.
   - type: dropdown
     attributes:
       label: Project License
-      description: What license will you be releasing with? MIT is GitHub's preferred open source license unless a specific community requires a different license. If not MIT, open an issue in `legal` and link to that issue in this issue
+      description: What license will you be releasing with? MIT is GitHub's preferred open source license unless a specific community requires a different license. If not MIT, open an issue in [repo](xxx) and link to that issue in this issue
       options:
         - MIT License
         - Other
@@ -60,7 +60,7 @@ body:
   - type: textarea
     attributes:
       label: Business implications
-      description: Does the project overlap with existing projects or paid products in GitHub or Microsoft's portfolio? If so, what distinguishes it from them, to avoid a situation where we're competing with ourselves?
+      description: Does the project overlap with existing projects or paid products in GitHub portfolio? 
       value: |
         ...
   - type: input
