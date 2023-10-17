@@ -43,6 +43,26 @@ You can retrieve information about the [community standards documents](https://d
 
 The Repository object in the GraphQL API is the primary location for metrics which relate to project health. These metrics are available in the `Repository` object, and while there are lots of interesting fields available, we've recently coalesced the most useful ones under the `metrics` field. Check the [API docs](https://docs.github.com/en/graphql/reference/objects#repository) for the full list.
 
+> **Note**
+> As of October 2023, the following metrics are in public beta, behind a feature flag. In order to access them, you will need to add a special header to your requests: `GraphQL-Features: ospo_metrics_api`
+
 - **LastContributionDate** - The most recent date there was _any of_ the following activity: a commit to a repository’s default branch, opening an issue or discussion, answering a discussion, proposing a pull request, or submitting a pull request review. This is a good single-number metric to find projects that may be unmaintained or in need of archiving.
 - **CommitCount** - A monotonically increasing count of the total number of commits pushed to the default branch of the repository. Tracking the change in this over time will give a sense of the overall activity in the repository.
 - **IssueCommentCount** - Similar to CommitCount, this is a monotonically increasing count of the total number of comments on issues in the repository.
+
+### More useful metrics
+
+In addition to the new metrics, there's a lot of useful information tucked away in the existing GraphQL API. Many tools, like the cauldron.io example above, make use of these under the hood, and you might find them helpful in your own dashboards.
+
+- `repository(owner:"monalisa",name:"octocat") { issues { totalCount } }` - returns the number of total issues in the repository
+- `repository(owner:"monalisa",name:"octocat") { forkcount }` - the total number of forks of this repository in the fork network (i.e. including forks of forks)
+
+More complex GraphQL queries are possible as well. For example, this query:
+
+```graphql
+    repository(owner:"voxpupuli",name:"puppetboard") {
+      pullRequests(states:OPEN) { totalCount }
+    }
+```
+
+Returns the number of open pull requests. Other possible states are `CLOSED` and `MERGED`. Tracking these over time is a key indicator of activity in the repository.
