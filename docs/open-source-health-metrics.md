@@ -41,7 +41,7 @@ You can retrieve information about the [community standards documents](https://d
 
 ### Repository metrics
 
-The Repository object in the GraphQL API is the primary location for metrics which relate to project health. These metrics are available in the `Repository` object, and while there are lots of interesting fields available, we've recently coalesced the most useful ones under the `metrics` field. 
+The Repository object in the GraphQL API is the primary location for metrics which relate to project health. These metrics are available in the `Repository` object, and while there are lots of interesting fields available, we've recently coalesced the most useful ones under the `metrics` field.
 
 > **Note**
 > As of October 2023, the following metrics are in public beta, behind a feature flag. In order to access them, you will need to add a special header to your requests: `GraphQL-Features: ospo_metrics_api` . While they are in beta, the metrics may change and the official API documentation will not have their descriptions. We will update this document as the metrics are finalized and the feature flag is removed.
