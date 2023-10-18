@@ -7,6 +7,7 @@ Contributors are an essential part of a thriving open source community. Without 
 In the GitHub OSPO we have developed a tool that we use in order to get information on a project or organizations contributors. We maintain several open source repositories and have developed this action to empower maintainers to measure how many new and returning contributors and contributions have occurred over any given time period.
 
 ## Contributors action
+
 Our goal as an OSPO is to use the contributors action in order to:
 
 - **Identify candidates** for [onboarding new maintainers](https://github.blog/2023-06-01-elevating-open-source-contributors-to-open-source-maintainers/)
