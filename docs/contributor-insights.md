@@ -32,19 +32,19 @@ The action protects contributor privacy by not supplying any information that is
 Interested in implementing the contributors action in your project or organization? Here's a step-by-step guide to get you started:
 
 1. Create a Repository
-Start by creating a new repository to host the contributors GitHub action or select an existing one. You can also run this action on an entire organization.
+   Start by creating a new repository to host the contributors GitHub action or select an existing one. You can also run this action on an entire organization.
 
 2. Choose an Example Workflow
-Select the best-fit workflow file from the [examples](https://github.com/github/contributors/blob/main/README.md#example-workflow) provided and customize it to your needs with the ["Configuration" section of the contributors action README.md file](https://github.com/github/contributors/blob/main/README.md#configuration).
+   Select the best-fit workflow file from the [examples](https://github.com/github/contributors/blob/main/README.md#example-workflow) provided and customize it to your needs with the ["Configuration" section of the contributors action README.md file](https://github.com/github/contributors/blob/main/README.md#configuration).
 
 3. Copy and Edit the Workflow
-Copy the chosen example workflow into your repository and save it in the .github/workflows/ directory with the .yml file extension. Edit the values in the workflow to match your specific needs, including the organization or repository you want to measure, start and end dates (if applicable), and other configurations.
+   Copy the chosen example workflow into your repository and save it in the .github/workflows/ directory with the .yml file extension. Edit the values in the workflow to match your specific needs, including the organization or repository you want to measure, start and end dates (if applicable), and other configurations.
 
 4. Set the GitHub Token
-Ensure that you have a GitHub Token with the necessary permissions to read the repository or organization you're interested in scanning. If you're running the Action on a different repository or organization, create a GitHub API token and store it as a repository secret, referencing it in your workflow.
+   Ensure that you have a GitHub Token with the necessary permissions to read the repository or organization you're interested in scanning. If you're running the Action on a different repository or organization, create a GitHub API token and store it as a repository secret, referencing it in your workflow.
 
 5. Commit and Trigger the Action
-Commit the workflow file to your default branch and wait for the Action to trigger based on your specified schedule or manually initiate it via a [workflow_dispatch](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow).
+   Commit the workflow file to your default branch and wait for the Action to trigger based on your specified schedule or manually initiate it via a [workflow_dispatch](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow).
 
 ## `CONTRIBUTING.md` files for every project
 
