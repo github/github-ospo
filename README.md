@@ -33,6 +33,7 @@ We have used those as placeholder values where our policies point to internal on
   - [Commercial licenses](./docs/commercial-licenses.md)
   - [Maximize your open source presence on GitHub](./docs/org-presence-on-github.md)
   - [Measuring maintainer responsiveness and issue metrics](./docs/issue-metrics.md)
+  - [Gaining insights into your contributors](./docs/contributor-insights.md)
 - [Internal OSPO newsletters](./newsletter%20template)
 
 ### Maintainers
