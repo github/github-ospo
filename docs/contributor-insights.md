@@ -1,5 +1,7 @@
 # Contributor insights
 
+![An image of earth, the community on GitHub, and an Octocat on the moon](https://github.com/github/github-ospo/blob/contributor-insights/images/community.jpg?raw=true)
+
 Contributors are an essential part of a thriving open source community. Without them, it doesn't really feel like open source! In light of that, OSPOs and open source maintainers often research their contributors and monitor contributions as a way of indicating project health.
 
 In the GitHub OSPO we have developed a tool that we use in order to get information on a project or organizations contributors. We maintain several open source repositories and have developed this action to empower maintainers to measure how many new and returning contributors and contributions have occurred over any given time period.
