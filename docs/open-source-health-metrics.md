@@ -41,10 +41,10 @@ You can retrieve information about the [community standards documents](https://d
 
 ### Repository metrics
 
-The Repository object in the GraphQL API is the primary location for metrics which relate to project health. These metrics are available in the `Repository` object, and while there are lots of interesting fields available, we've recently coalesced the most useful ones under the `metrics` field. Check the [API docs](https://docs.github.com/en/graphql/reference/objects#repository) for the full list.
+The Repository object in the GraphQL API is the primary location for metrics which relate to project health. These metrics are available in the `Repository` object, and while there are lots of interesting fields available, we've recently coalesced the most useful ones under the `metrics` field. 
 
 > **Note**
-> As of October 2023, the following metrics are in public beta, behind a feature flag. In order to access them, you will need to add a special header to your requests: `GraphQL-Features: ospo_metrics_api`
+> As of October 2023, the following metrics are in public beta, behind a feature flag. In order to access them, you will need to add a special header to your requests: `GraphQL-Features: ospo_metrics_api` . While they are in beta, the metrics may change and the official API documentation will not have their descriptions. We will update this document as the metrics are finalized and the feature flag is removed.
 
 - **LastContributionDate** - The most recent date there was _any of_ the following activity: a commit to a repository’s default branch, opening an issue or discussion, answering a discussion, proposing a pull request, or submitting a pull request review. This is a good single-number metric to find projects that may be unmaintained or in need of archiving.
 - **CommitCount** - A monotonically increasing count of the total number of commits pushed to the default branch of the repository. Tracking the change in this over time will give a sense of the overall activity in the repository.
