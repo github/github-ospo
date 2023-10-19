@@ -1,5 +1,4 @@
 ---
-
 name: Open Source Software (OSS) Release
 description: File an open source release
 assignees: ashleywolf, zkoppert
@@ -60,7 +59,7 @@ body:
   - type: textarea
     attributes:
       label: Business implications
-      description: Does the project overlap with existing projects or paid products in GitHub portfolio? 
+      description: Does the project overlap with existing projects or paid products in GitHub portfolio?
       value: |
         ...
   - type: input
@@ -96,12 +95,12 @@ body:
       options:
         - label: Define ownership by creating a Service Catalog entry. If you have questions, start at the FAQ for establishing ownership for open source repositories.
         - label: Follow [best practices for maintainers](https://opensource.guide/best-practices/)
-        - label: Join the GitHub maintainer community in discussions.  
+        - label: Join the GitHub maintainer community in discussions.
   - type: checkboxes
     attributes:
       label: Ship It
       options:
         - label: Reserve your project name on distribution platforms. If your project is Ruby, reserve the Rubygems gem name. If your project is Python, reserve the Pypi project. This will prevent confusion with namesquatting even if you don't plan to publish to these platforms.
-        - label: Publish your project! 
+        - label: Publish your project!
         - label: Share your project! Post in `internal channels`, on your personal social channels, and the [GitHub blog](https://github.blog/).
         - label: (optional) Give feedback on this process.
