@@ -65,3 +65,15 @@ More complex GraphQL queries are possible as well. For example, this query:
 ```
 
 Returns the number of open pull requests. Other possible states are `CLOSED` and `MERGED`. Tracking these over time is a key indicator of activity in the repository.
+
+## Other Graphing Options
+
+With the API reference in hand, users of other time-series visualization tools should be able to incorporate these metrics alongside your existing dashboards.
+
+### Grafana GitHub integration
+
+There is a Grafana-supported integration for GitHub available here: https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-github/ . For Grafana cloud, this requires a grafana-agent running on a host which has access to query the GitHub API and publish the results to the Grafana-hosted Prometheus instance.
+
+The integration includes a dashboard with several graphs that can be used as a starting point, including open PRs, open issues, and the number of stars and watchers of a repo.
+
+![A Grafana dashboard of GitHub repository statistics for the cli/cli repo](https://github.com/github/github-ospo/assets/56753/b8f22a07-d581-4b58-b621-0959eefa39e2)
