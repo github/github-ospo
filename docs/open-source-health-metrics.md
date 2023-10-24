@@ -26,6 +26,8 @@ Here are some suggestions for patterns you might look for as you examine the dat
 
 3. **Identify active communities**: One of the most important metrics for any OSPO to track is the overall number of contributions coming into the project. This information can help OSPOs identify project strengths, pull request and review norms, and ensure that the most important projects are getting the attention they need. By analyzing metrics such as the number of code contributions, issue resolution time, and pull request activity for a given repository, OSPOs can determine whether the repository is still being actively developed and maintained, or if it has become stagnant. If a repository is found to be inactive, the OSPO can work with the project's stakeholders to determine whether it should be [archived](https://docs.github.com/en/repositories/archiving-a-github-repository), or if resources should be allocated to help revive it. By proactively identifying repositories that may need to be archived, OSPOs can help ensure that their organization's open source portfolio remains focused and relevant.
 
+![Cauldron.io Performance graphs for an open source project showing time to resolution for issues and PRs](https://github.com/github/github-ospo/assets/56753/5a8fa8f6-a6a5-49aa-a982-d80ee44b2e1d)
+
 ## Working with the GitHub API
 
 If you're interested in building your own dashboards, you can use the GitHub API to pull the data you need. The [GraphQL API](https://docs.github.com/en/graphql) provides a flexible way to query for data, and is the recommended approach for building dashboards. The [GitHub API Explorer](https://docs.github.com/en/rest/overview/explorer) is a great way to explore the data available from the API and test out queries. Specific to community health, we in the GitHub OSPO have been working on improving the GraphQL API to add metrics which were either not available at all or required some complicated work to retrieve.
@@ -65,3 +67,15 @@ More complex GraphQL queries are possible as well. For example, this query:
 ```
 
 Returns the number of open pull requests. Other possible states are `CLOSED` and `MERGED`. Tracking these over time is a key indicator of activity in the repository.
+
+## Other Graphing Options
+
+With the API reference in hand, users of other time-series visualization tools should be able to incorporate these metrics alongside your existing dashboards.
+
+### Grafana GitHub integration
+
+There is a Grafana-supported integration for GitHub available here: https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-github/ . For Grafana cloud, this requires a grafana-agent running on a host which has access to query the GitHub API and publish the results to the Grafana-hosted Prometheus instance.
+
+The integration includes a dashboard with several graphs that can be used as a starting point, including open PRs, open issues, and the number of stars and watchers of a repo.
+
+![A Grafana dashboard of GitHub repository statistics for the cli/cli repo](https://github.com/github/github-ospo/assets/56753/b8f22a07-d581-4b58-b621-0959eefa39e2)
