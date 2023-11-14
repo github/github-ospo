@@ -34,11 +34,15 @@ We have used those as placeholder values where our policies point to internal on
   - [Maximize your open source presence on GitHub](./docs/org-presence-on-github.md)
   - [Measuring maintainer responsiveness and issue metrics](./docs/issue-metrics.md)
   - [Gaining insights into your contributors](./docs/contributor-insights.md)
-- Actions
-  - [github/stale-repos](https://github.com/github/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
-  - [github/contributors](https://github.com/github/contributors) - Given an organization or repository, produces information about the contributors over the specified time period.
 - [Misc]
   - Internal OSPO newsletters](./newsletter%20template)
+
+## Actions
+
+In addition to the information in this repository, we've also released a number of GitHub Actions that can help OSPOs track activity, clean house, and automate other useful activities. The actions are released in separate repos but are all linked here for convenience.
+
+- [github/stale-repos](https://github.com/github/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
+- [github/contributors](https://github.com/github/contributors) - Given an organization or repository, produces information about the contributors over the specified time period.
 
 ### Maintainers
 
