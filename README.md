@@ -34,8 +34,8 @@ We have used those as placeholder values where our policies point to internal on
   - [Maximize your open source presence on GitHub](./docs/org-presence-on-github.md)
   - [Measuring maintainer responsiveness and issue metrics](./docs/issue-metrics.md)
   - [Gaining insights into your contributors](./docs/contributor-insights.md)
-- [Misc]
-  - Internal OSPO newsletters](./newsletter%20template)
+- Misc
+  - [Internal OSPO newsletters](./newsletter%20template)
 
 ## Actions
 
