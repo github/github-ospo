@@ -2,9 +2,9 @@
 
 ![Octocat taking parts out of a box](/images/octocat-opening-box.jpeg)
 
-Large organizations are increasingly “working in the open”: releasing internal tools and projects as open source. But once they’re out in the world, maintainers often find it difficult to track the health of these projects, especially when there are dozens or hundreds of them. GitHub’s Open Source Program Office (OSPO), in our mission to help other OSPOs and maintainers of independent OSS projects, has added a number of key metrics to our public API that can power dashboards and visualizations which help make sense of the data.
+Large organizations are increasingly “working in the open”: releasing internal tools and projects as open source. But once they’re out in the world, maintainers often find it difficult to track the health of these projects, especially when there are dozens or hundreds of them. As part of our mission to help other Open Source Program Offices and maintainers of independent OSS projects, GitHub’s OSPO has improved and documented parts of the GitHub API that can power dashboards and visualizations which help make sense of the data.
 
-This document describes how to combine the new metrics with existing information to build a complete picture of your repository health. We'll explore both setting up a popular end-to-end solution and a DIY approach for those who want to build their own.
+This document describes how to combine metrics and information from the API to build a complete picture of your repository health. We'll explore both setting up a popular end-to-end solution and a more DIY approach for those who want to build their own.
 
 ## Introducing Cauldron.io
 
@@ -30,7 +30,7 @@ Here are some suggestions for patterns you might look for as you examine the dat
 
 ## Working with the GitHub API
 
-If you're interested in building your own dashboards, you can use the GitHub API to pull the data you need. The [GraphQL API](https://docs.github.com/en/graphql) provides a flexible way to query for data, and is the recommended approach for building dashboards. The [GitHub API Explorer](https://docs.github.com/en/rest/overview/explorer) is a great way to explore the data available from the API and test out queries. Specific to community health, we in the GitHub OSPO have been working on improving the GraphQL API to add metrics which were either not available at all or required some complicated work to retrieve.
+If you're interested in building your own dashboards, you can use the GitHub API to pull the data you need. The [GraphQL API](https://docs.github.com/en/graphql) provides a flexible way to query for data, and is the recommended approach for building dashboards. The [GitHub API Explorer](https://docs.github.com/en/rest/overview/explorer) is a great way to explore the data available from the API and test out queries. Specific to community health, we in the GitHub OSPO have pulled together data from disparate sources to make easier dashboarding.
 
 ### Community standards
 
@@ -41,32 +41,123 @@ You can retrieve information about the [community standards documents](https://d
 - [CodeOfConduct](https://docs.github.com/en/graphql/reference/objects#codeofconduct)
 - [README.md](https://docs.github.com/en/graphql/reference/objects#readme)
 
-### Repository metrics
+### Querying GraphQL metrics
 
-The Repository object in the GraphQL API is the primary location for metrics which relate to project health. These metrics are available in the `Repository` object, and while there are lots of interesting fields available, we've recently coalesced the most useful ones under the `metrics` field.
+GitHub's GraphQL API has an absolute treasure trove of information about what's going on with your repositories. In fact, the amount and variety of data available can be a bit overwhelming, so we've selected a few key metrics that can provide insights into project and community health. The following GraphQL queries will provide point-in-time data which time-series visualization software like Grafana (see below) can turn into charts that can help identify trends over time.
 
-> **Note**
-> As of October 2023, the following metrics are in public beta, behind a feature flag. In order to access them, you will need to add a special header to your requests: `GraphQL-Features: ospo_metrics_api` . While they are in beta, the metrics may change and the official API documentation will not have their descriptions. We will update this document as the metrics are finalized and the feature flag is removed.
+- Open and closed issue counts - Track these to look for a backlog in unanswered issues
+- Open and closed pull requests, including which were closed without merge - Similarly, a growing backlog of open PRs can indicate maintainer overload. Additionally, a high ratio of PRS which are closed without merge could be spam or low-quality contributions which need additional guidance.
+- Date of most recent activity in the repo, including discussions, PRs, issues, commits, and releases - Archiving inactive repos can reduce maintainer burden and allow you to focus on projects which need more attention.
 
-- **LastContributionDate** - The most recent date there was _any of_ the following activity: a commit to a repository’s default branch, opening an issue or discussion, answering a discussion, proposing a pull request, or submitting a pull request review. This is a good single-number metric to find projects that may be unmaintained or in need of archiving.
-- **CommitCount** - A monotonically increasing count of the total number of commits pushed to the default branch of the repository. Tracking the change in this over time will give a sense of the overall activity in the repository.
-
-### More useful metrics
-
-In addition to the new metrics, there's a lot of useful information tucked away in the existing GraphQL API. Many tools, like the cauldron.io example above, make use of these under the hood, and you might find them helpful in your own dashboards.
-
-- `repository(owner:"monalisa",name:"octocat") { issues { totalCount } }` - returns the number of total issues in the repository
-- `repository(owner:"monalisa",name:"octocat") { forkcount }` - the total number of forks of this repository in the fork network (i.e. including forks of forks)
-
-More complex GraphQL queries are possible as well. For example, this query:
+Try these queries in the GraphQL explorer:
 
 ```graphql
-    repository(owner:"voxpupuli",name:"puppetboard") {
-      pullRequests(states:OPEN) { totalCount }
+# Raw numbers related to repository activity
+query RepositoryMetrics {
+  repository(owner: "github", name: "docs") {
+    totalIssueCount: issues {
+      totalCount
     }
+    openIssueCount: issues(states: [OPEN]) {
+      totalCount
+    }
+    closedIssueCount: issues(states: [CLOSED]) {
+      totalCount
+    }
+    openPullRequestCount: pullRequests(states: [OPEN]) {
+      totalCount
+    }
+    closedPullRequestCount: pullRequests(states: [CLOSED]) {
+      totalCount
+    }
+    mergedPullRequestCount: pullRequests(states: [MERGED]) {
+      totalCount
+    }
+  }
+}
 ```
 
-Returns the number of open pull requests. Other possible states are `CLOSED` and `MERGED`. Tracking these over time is a key indicator of activity in the repository.
+The response will look something like:
+
+```graphql
+{
+  "data": {
+    "repository": {
+      "totalIssueCount": { "totalCount": 2991 },
+      "openIssueCount": { "totalCount": 43 },
+      "closedIssueCount": { "totalCount": 2948 },
+      "openPullRequestCount": { "totalCount": 24 },
+      "closedPullRequestCount": { "totalCount": 5448 },
+      "mergedPullRequestCount": { "totalCount": 10404 }
+    }
+  }
+}
+```
+
+The last activity query may be better suited to periodic audits looking for activity than continuous time-series graphing. It looks like this:
+
+```graphql
+query LastActivity {
+  repository(owner: "github", name: "docs") {
+    updatedAt
+    lastestCreatedDiscussion: discussions(
+      last: 1
+      orderBy: { field: CREATED_AT, direction: ASC }
+    ) {
+      nodes {
+        createdAt
+      }
+    }
+    latestAnsweredDiscussion: discussions(
+      last: 1
+      orderBy: { field: UPDATED_AT, direction: ASC }
+      answered: true
+    ) {
+      nodes {
+        updatedAt
+      }
+    }
+    lastestPullRequest: pullRequests(
+      last: 1
+      orderBy: { field: CREATED_AT, direction: ASC }
+    ) {
+      nodes {
+        createdAt
+      }
+    }
+    lastestIssue: issues(
+      last: 1
+      orderBy: { field: CREATED_AT, direction: ASC }
+    ) {
+      nodes {
+        createdAt
+      }
+    }
+    lastestCommit: pushedAt
+    latestRelease {
+      createdAt
+    }
+  }
+}
+```
+
+It returns a structure like the following, with output lines joined here for brevity:
+
+```graphql
+{
+  "data": {
+    "repository": {
+      "updatedAt": "2023-12-05T23:44:24Z",
+      "lastestCreatedDiscussion": { "nodes": [ { "createdAt": "2023-11-24T12:18:22Z" } ] },
+      "latestAnsweredDiscussion": { "nodes": [ { "updatedAt": "2023-11-16T09:13:07Z" } ] },
+      "lastestPullRequest": { "nodes": [ { "createdAt": "2023-12-05T23:35:24Z" } ] },
+      "lastestIssue": { "nodes": [ { "createdAt": "2023-12-05T04:20:22Z" } ] },
+      "lastestCommit": "2023-12-05T23:35:24Z",
+      "latestRelease": { "createdAt": "2023-02-14T14:35:19Z" }
+    }
+  }
+}
+```
 
 ## Other Graphing Options
 
