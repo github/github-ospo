@@ -175,14 +175,14 @@ The GitHub Integration is available here: https://grafana.com/docs/grafana-cloud
 
 The GitHub Data Source's page is here: https://grafana.com/grafana/plugins/grafana-github-datasource/ . You can install it directly from Grafana Cloud. Click **Connect data**, then choose **Data sources** from the sidebar. Click **Add new data source** and search for **GitHub** in the search bar. Clicking on the result will install the data source and make it available.
 
-![../images/metrics-doc/Grafana-add-GitHub-datasource.gif]
+![Animated gif of adding the data source through Grafana cloud](/images/metrics-doc/Grafana-add-GitHub-datasource.gif)
 
 Once it's installed, you'll need to create a Personal Access Token so it can access the GitHub API. If you're using GHES, you can set the URL endpoint to your instance's hostname by toggling the **GitHub License** selector to **Enterprise**. Click **Save and test** , and you should soon see a confirmation that the data source is working.
 
-![../images/metrics-doc/grafana-configure-datasource.png]
+![Configuring the data source from the Grafana cloud UI](/images/metrics-doc/grafana-configure-datasource.png)
 
 You can import a sample dashboard [available here](https://grafana.com/grafana/dashboards/14000-github-default/) - From the top-level page of Grafana, click **All dashboards**, then select **Import** from the **New** pulldown in the top right of the screen. Paste that url into the text field and click **Load**. You can optionally rename or organize it into a folder here, but you must configure it by selecting the datasource we configured in the previous step, by selecting it from the picker labelled GitHub. Click **Import** and after a short loading interval you should see the dashboard load.
 
-![../images/metrics-doc/Grafana-import-dashboard.gif]
+![Animated gif showing the previous instructions for importing the dashboard](/images/metrics-doc/Grafana-import-dashboard.gif)
 
 By default, it will fetch stats for the `grafana/grafana` repository, but you'll probably want to point it at your own repository. This is a great starting point for additional customization and querying. Check out this [blog post about how Grafana uses the data source and dashboard](https://grafana.com/blog/2020/09/21/how-we-use-the-grafana-github-plugin-to-track-outstanding-pull-requests/) for a real-world use case.
