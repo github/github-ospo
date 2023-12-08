@@ -165,8 +165,24 @@ With the API reference in hand, users of other time-series visualization tools s
 
 ### Grafana GitHub integration
 
-There is a Grafana-supported integration for GitHub available here: https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-github/ . For Grafana cloud, this requires a grafana-agent running on a host which has access to query the GitHub API and publish the results to the Grafana-hosted Prometheus instance.
+There are two separate Grafana integrations with GitHub. The first (which is the one actually called an "Integration" in their nomenclature) provides some pre-built dashboards and is more directly related to the kind of repository metrics we're talking about in this doc. However, it queries the GitHub API through the Grafana Agent, a software daemon which needs to run on a host machine like an Azure Linux instance.
 
-The integration includes a dashboard with several graphs that can be used as a starting point, including open PRs, open issues, and the number of stars and watchers of a repo.
+The second integration is a "Data Source" in their nomenclature, which queries the API directly through a server-side service. The GitHub Data Source provides a broader set of data than just repository metrics, but it has substantial overlap with the topics in this document, so we'll focus more on it.
+
+The GitHub Integration is available here: https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-github/ . For Grafana cloud, this requires a grafana-agent running on a host which has access to query the GitHub API and publish the results to the Grafana-hosted Prometheus instance. The integration includes a dashboard with several graphs that can be used as a starting point, including open PRs, open issues, and the number of stars and watchers of a repo.
 
 ![A Grafana dashboard of GitHub repository statistics for the cli/cli repo](https://github.com/github/github-ospo/assets/56753/b8f22a07-d581-4b58-b621-0959eefa39e2)
+
+The GitHub Data Source's page is here: https://grafana.com/grafana/plugins/grafana-github-datasource/ . You can install it directly from Grafana Cloud. Click **Connect data**, then choose **Data sources** from the sidebar. Click **Add new data source** and search for **GitHub** in the search bar. Clicking on the result will install the data source and make it available.
+
+![../images/metrics-doc/Grafana-add-GitHub-datasource.gif]
+
+Once it's installed, you'll need to create a Personal Access Token so it can access the GitHub API. If you're using GHES, you can set the URL endpoint to your instance's hostname by toggling the **GitHub License** selector to **Enterprise**. Click **Save and test** , and you should soon see a confirmation that the data source is working.
+
+![../images/metrics-doc/grafana-configure-datasource.png]
+
+You can import a sample dashboard [available here](https://grafana.com/grafana/dashboards/14000-github-default/) - From the top-level page of Grafana, click **All dashboards**, then select **Import** from the **New** pulldown in the top right of the screen. Paste that url into the text field and click **Load**. You can optionally rename or organize it into a folder here, but you must configure it by selecting the datasource we configured in the previous step, by selecting it from the picker labelled GitHub. Click **Import** and after a short loading interval you should see the dashboard load.
+
+![../images/metrics-doc/Grafana-import-dashboard.gif]
+
+By default, it will fetch stats for the `grafana/grafana` repository, but you'll probably want to point it at your own repository. This is a great starting point for additional customization and querying. Check out this [blog post about how Grafana uses the data source and dashboard](https://grafana.com/blog/2020/09/21/how-we-use-the-grafana-github-plugin-to-track-outstanding-pull-requests/) for a real-world use case.
