@@ -37,7 +37,7 @@ We have used those as placeholder values where our policies point to internal on
 - Misc
   - [Internal OSPO newsletters](./newsletter%20template)
 
-## Tools Created by GitHub OSPO 
+## Tools Created by GitHub OSPO
 
 ### GitHub Actions
 
