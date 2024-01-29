@@ -10,7 +10,7 @@ With new versions of libraries, frameworks, and packages being released regularl
 
 ## Dependabot: Automating dependency updates
 
-[Dependabot version updates](https://docs.github.com/code-security/dependabot) automate the process of updating dependencies by creating pull requests for new versions. Not to be confused with the more security focused variants of Dependabot in [“Dependabot alerts”](https://docs.github.com/code-security/dependabot/dependabot-alerts/about-dependabot-alerts) and [“Dependabot security updates”](https://docs.github.com/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates), Dependabot version updates target any outdated dependencies instead of waiting for vulnerabilities.  This alleviates the burden on developers and ensures that projects are using the latest and safest versions of their dependencies.
+[Dependabot version updates](https://docs.github.com/code-security/dependabot) automate the process of updating dependencies by creating pull requests for new versions. Not to be confused with the more security focused variants of Dependabot in [“Dependabot alerts”](https://docs.github.com/code-security/dependabot/dependabot-alerts/about-dependabot-alerts) and [“Dependabot security updates”](https://docs.github.com/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates), Dependabot version updates target any outdated dependencies instead of waiting for vulnerabilities. This alleviates the burden on developers and ensures that projects are using the latest and safest versions of their dependencies.
 
 ## The Dependabot dilemma
 
