@@ -2,7 +2,7 @@
 
 # github-ospo
 
-Helping open source program offices get started
+Helping open source program offices (OSPOs) get started
 
 The purpose of this repo is to enable new OSPOs to be successful on GitHub. On behalf of the GitHub OSPO we are sharing our policies, tools, and best practices to guide you through the first 6-12 months of your organization's open source journey. There are also other OSPO guides and resources available through [TODO](https://todogroup.org/) & [OSPO Alliance](https://ospo.zone/) as well as [opensource.guide](https://opensource.guide/). This repo will focus on GitHub related tools and content.
 
@@ -47,8 +47,9 @@ In addition to the information in this repository, we've also released a number 
 - [github/evergreen](https://github.com/github/evergreen) - Enable automated security updates and open a issue/PR in repos in an org that have dependency files but no dependabot.yaml file
 - [github/issue-metrics](https://github.com/github/issue-metrics) - Gather metrics on issues/prs/discussions such as time to first response, count of issues opened, closed, etc.
 - [github/stale-repos](https://github.com/github/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
+- [github/automatic-contrib-prs](https://github.com/github/automatic-contrib-prs) - Automatically open a pull request for repositories that have no CONTRIBUTING.md file
 
-### Apps
+### GitHub Apps
 
 - [github-community-projects/internal-contribution-forks](https://github.com/github-community-projects/internal-contribution-forks) - A GitHub App that allows you to contribute upstream using a "private fork"
 
