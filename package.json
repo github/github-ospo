@@ -10,6 +10,6 @@
   "license": "MIT",
   "devDependencies": {
     "markdownlint-cli2": "^0.12.1",
-    "prettier": "^3.2.4"
+    "prettier": "^3.2.5"
   }
 }
