@@ -35,6 +35,7 @@ We have used those as placeholder values where our policies point to internal on
   - [Measuring maintainer responsiveness and issue metrics](./docs/issue-metrics.md)
   - [Gaining insights into your contributors](./docs/contributor-insights.md)
   - [Managing dependencies at scale](./docs/managing-dependencies-at-scale.md)
+  - [Keeping repository maintainer information accurate](./docs/keeping-ownership-updated.md)
 - Misc
   - [Internal OSPO newsletters](./newsletter%20template)
 
@@ -48,6 +49,7 @@ In addition to the information in this repository, we've also released a number 
 - [github/evergreen](https://github.com/github/evergreen) - Enable automated security updates and open a issue/PR in repos in an org that have dependency files but no dependabot.yaml file
 - [github/issue-metrics](https://github.com/github/issue-metrics) - Gather metrics on issues/prs/discussions such as time to first response, count of issues opened, closed, etc.
 - [github/stale-repos](https://github.com/github/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
+- [github/cleanowners](https://github.com/github/cleanowners) - A GitHub Action to suggest removal of non-organization members from CODEOWNERS files
 - [github/automatic-contrib-prs](https://github.com/github/automatic-contrib-prs) - Automatically open a pull request for repositories that have no CONTRIBUTING.md file
 
 ### GitHub Apps
