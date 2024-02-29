@@ -24,7 +24,7 @@ name: Weekly codeowners cleanup
 on:
   workflow_dispatch:
   schedule:
-    - cron: '3 2 1 * *'
+    - cron: "3 2 1 * *"
 
 permissions:
   issues: write
