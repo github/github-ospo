@@ -1,0 +1,14 @@
+---
+name: New Action request
+description: Suggest an idea for a new app or action
+labels:
+  - enhancement
+body:
+  - type: textarea
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem is and what the new action would accomplish. Please describe.
+      placeholder: |
+        Ex. It would be great to have an action that would ...
+    validations:
+      required: false
