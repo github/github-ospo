@@ -11,4 +11,4 @@ body:
       placeholder: |
         Ex. It would be great to have an action that would ...
     validations:
-      required: true
+      required: false
