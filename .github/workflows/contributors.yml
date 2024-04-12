@@ -5,7 +5,7 @@ on:
     - cron: "3 2 1 * *"
 
 permissions:
-  issues: write
+  discussions: write
 
 jobs:
   contributor_report:
@@ -41,7 +41,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          title: Thank you Contributors!
+          title: "Thank you Contributors!"
           body-filepath: ./contributors.md
-          repository-id: R_kgDOJDwwMQ
-          category-id: DIC_kwDOJDwwMc4CUmf8
+          repository-id: 'R_kgDOJDwwMQ'
+          category-id: 'DIC_kwDOJDwwMc4CUmf8'
