@@ -43,5 +43,5 @@ jobs:
         with:
           title: "Thank you Contributors!"
           body-filepath: ./contributors.md
-          repository-id: 'R_kgDOJDwwMQ'
-          category-id: 'DIC_kwDOJDwwMc4CUmf8'
+          repository-id: "R_kgDOJDwwMQ"
+          category-id: "DIC_kwDOJDwwMc4CUmf8"
