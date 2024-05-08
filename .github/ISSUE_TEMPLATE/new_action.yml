@@ -15,7 +15,7 @@ body:
   - type: checkboxes
     attributes:
       label: Checklist
-      description: Items that need to be completed along with the creation of the new App or Action
+      description: Items that need to be completed along with the creation of the new App or Action (to be filled out later when the action is being developed)
       options:
         - label: Update [GitHub Actions section of README](https://github.com/github/github-ospo?tab=readme-ov-file#tools-created-by-github-ospo) linking to the new App or Action
           required: true
