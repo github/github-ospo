@@ -12,3 +12,14 @@ body:
         Ex. It would be great to have an action that would ...
     validations:
       required: false
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: Items that need to be completed along with the creation of the new App or Action
+      options:
+        - label: Update [GitHub Actions section of README](https://github.com/github/github-ospo?tab=readme-ov-file#tools-created-by-github-ospo) linking to the new App or Action
+          required: true
+        - label: Write a blog post on [GitHub Blog](https://github.blog/) about the new App or Action
+          required: true
+        - label: Add App or Action to [todogroup/awesome-ospo](https://github.com/todogroup/awesome-ospo) via pull request
+          required: true
