@@ -1,4 +1,3 @@
-
 # Support for Sustainability
 
 ## In what areas do you believe GitHub should prioritize spending to support the sustainability of open source projects we depend on? (Select the top 3 choices)

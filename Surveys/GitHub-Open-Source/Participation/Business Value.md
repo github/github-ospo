@@ -1,4 +1,4 @@
-# Business Value  
+# Business Value
 
 ## I understand how GitHub’s open source contributions drive business value
 

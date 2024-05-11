@@ -1,6 +1,6 @@
 # Newsletter
 
-## 2. Do you know about the OSPO/OSS newsletter?**
+## 2. Do you know about the OSPO/OSS newsletter?\*\*
 
 - Yes
 - No
