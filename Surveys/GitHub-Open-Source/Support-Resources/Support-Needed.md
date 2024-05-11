@@ -1,6 +1,7 @@
 # Support Needed
 
-**What type of support do you anticipate would be most supportive of your goals for 2024? (Select all that apply)**
+## What type of support do you anticipate would be most supportive of your goals for 2024? (Select all that apply)
+
 - Open Source Learning Series (Open Source 101)
 - Licensing and compliance tools
 - AI tools

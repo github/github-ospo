@@ -1,6 +1,6 @@
 # Inclusion
 
-**In what ways do you think GitHub could more effectively support open source projects that advance diversity, equity, and inclusion?**
+## In what ways do you think GitHub could more effectively support open source projects that advance diversity, equity, and inclusion
 
 [Open Text]
 
