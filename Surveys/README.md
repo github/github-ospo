@@ -1,4 +1,4 @@
-# GitHub OSPO-Survey
+# GitHub OSPO Survey
 
 Survey questions we've used at GitHub's Open Source Programs Office (OSPO).
 
@@ -40,7 +40,7 @@ We've also included survey questions about funding and diversity and inclusion, 
   - [Support for Sustainability](Funding%20and%20Resource%20Allocation/Support%20for%20Sustainability.md)
   - [GitHub Sponsors](Funding%20and%20Resource%20Allocation/GitHub%20Sponsors.md)
   - [Diversity and Inclusion Support](Funding%20and%20Resource%20Allocation/Diversity%20and%20Inclusion%20Support.md)
+ 
+## **Acknowledgement**
 
-Copyright (c) GitHub Corporation. Licensed under the Creative Commons Attribution 4.0 International (CC-BY-4.0) license unless otherwise noted.
-
-Trademarks This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow GitHub’s Trademark & Brand Guidelines. Use of GitHub trademarks or logos in modified versions of this project must not cause confusion or imply GitHub sponsorship. Any use of third-party trademarks or logos are subject to those third-party’s policies.
+TY to Microsoft for sharing their [OSPO survey questions](https://github.com/microsoft/OSPO/tree/main/surveys)
