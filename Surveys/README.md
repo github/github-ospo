@@ -40,7 +40,7 @@ We've also included survey questions about funding and diversity and inclusion, 
   - [Support for Sustainability](Funding%20and%20Resource%20Allocation/Support%20for%20Sustainability.md)
   - [GitHub Sponsors](Funding%20and%20Resource%20Allocation/GitHub%20Sponsors.md)
   - [Diversity and Inclusion Support](Funding%20and%20Resource%20Allocation/Diversity%20and%20Inclusion%20Support.md)
- 
+
 ## **Acknowledgement**
 
 TY to Microsoft for sharing their [OSPO survey questions](https://github.com/microsoft/OSPO/tree/main/surveys)
