@@ -54,7 +54,7 @@ In addition to the information in this repository, we've also released a number 
 
 ### GitHub Apps
 
-- [github-community-projects/internal-contribution-forks](https://github.com/github-community-projects/internal-contribution-forks) - A GitHub App that allows you to contribute upstream using a "private fork"
+- [github-community-projects/private-mirrors](https://github.com/github-community-projects/private-mirrors) - A GitHub App that allows you to contribute upstream using a "private fork"
 
 ### Maintainers
 
