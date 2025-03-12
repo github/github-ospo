@@ -36,8 +36,6 @@ We have used those as placeholder values where our policies point to internal on
   - [Gaining insights into your contributors](./docs/contributor-insights.md)
   - [Managing dependencies at scale](./docs/managing-dependencies-at-scale.md)
   - [Keeping repository maintainer information accurate](./docs/keeping-ownership-updated.md)
-- Misc
-  - [Internal OSPO newsletters](./newsletter%20template)
 
 ## Tools Created by GitHub OSPO
 
