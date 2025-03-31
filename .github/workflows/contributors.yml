@@ -37,7 +37,7 @@ jobs:
           LINK_TO_PROFILE: "true"
 
       - name: Create GitHub Discussion
-        uses: abirismyname/create-discussion@v1.2.0
+        uses: abirismyname/create-discussion@v2.1.0
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
