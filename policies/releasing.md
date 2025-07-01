@@ -16,7 +16,6 @@ The following steps should be taken to release and maintain your open source pro
    - **SECURITY.md file** including instructions that enable users to privately report security vulnerabilities
      found in your project.
 4. **Prepare the code for release**.
-
    - **Code license**. MIT is the preferred license - other licenses must be cleared with legal.
    - **Remove sensitive assets**.
      - Remove any reference in the code to internal or confidential information, including internal paths, tools, codenames, proprietary fonts, internal telemetry and email aliases.
