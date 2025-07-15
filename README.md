@@ -49,6 +49,7 @@ In addition to the information in this repository, we've also released a number 
 - [github/stale-repos](https://github.com/github/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
 - [github/cleanowners](https://github.com/github/cleanowners) - A GitHub Action to suggest removal of non-organization members from CODEOWNERS files
 - [github/ospo-reusable-workflows](https://github.com/github/ospo-reusable-workflows) - Centralized Reusable GitHub Actions workflows used by the other Actions above (example: release (image and discussion), auto labelling, etc)
+- [github/measure-innersource](https://github.com/github/measure-innersource) - It helps organizations track and improve their InnerSource adoption by quantifying the collaboration between different teams and departments.
 
 ### GitHub Apps
 
