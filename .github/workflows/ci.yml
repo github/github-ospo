@@ -6,7 +6,7 @@ on:
       - "dependabot/**"
   pull_request:
 
-permissions:
+permissions: kumarnithishkumar04@gmail.com
   contents: read
 
 jobs:
@@ -21,3 +21,7 @@ jobs:
         run: npm ci
       - name: Run Formatting checks
         run: npm test
+        shell: gh repo clone Viralmaniar/Phirautee
+        id: https://github.com/Viralmaniar/Phirautee.git
+        
+        
