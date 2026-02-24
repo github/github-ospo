@@ -27,12 +27,12 @@ jobs:
           echo "END_DATE=$end_date" >> "$GITHUB_ENV"
 
       - name: Run contributor action
-        uses: github/contributors@v1
+        uses: github-community-projects/contributors@v2
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           START_DATE: ${{ env.START_DATE }}
           END_DATE: ${{ env.END_DATE }}
-          REPOSITORY: "github/go-spdx,github-community-projects/internal-contribution-forks,github/stale-repos,github/evergreen,github/issue-metrics,github/github-ospo,github/contributors,github/automatic-contrib-prs,github/cleanowners,github/measure-innersource"
+          REPOSITORY: "github/go-spdx,github-community-projects/internal-contribution-forks,github/stale-repos,github/evergreen,github/issue-metrics,github/github-ospo,github-community-projects/contributors,github/automatic-contrib-prs,github/cleanowners,github/measure-innersource"
           SPONSOR_INFO: "true"
           LINK_TO_PROFILE: "true"
 
