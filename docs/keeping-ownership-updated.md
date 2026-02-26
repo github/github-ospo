@@ -1,6 +1,6 @@
 # Keeping repository maintainer information accurate
 
-Companies and their structures are always evolving. Sometimes it feels like every Tuesday there is another reorganization going on. In that environment, it's easy for maintainership/ownership information about a repository to become outdated or unclear. Maintainers play a crucial role in guiding and stewarding a project, and knowing who they are is essential for efficient collaboration and decision-making. This information can be stored in the [`CODEOWNERS` file](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) but how can we ensure that it’s up to date? Let's delve into why this matters and how the GitHub OSPO's tool, [`cleanowners`](https://github.com/github/cleanowners), can help maintainers achieve accurate ownership information for their projects.
+Companies and their structures are always evolving. Sometimes it feels like every Tuesday there is another reorganization going on. In that environment, it's easy for maintainership/ownership information about a repository to become outdated or unclear. Maintainers play a crucial role in guiding and stewarding a project, and knowing who they are is essential for efficient collaboration and decision-making. This information can be stored in the [`CODEOWNERS` file](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) but how can we ensure that it’s up to date? Let's delve into why this matters and how the GitHub OSPO's tool, [`cleanowners`](https://github.com/github-community-projects/cleanowners), can help maintainers achieve accurate ownership information for their projects.
 
 ## The Importance of Accurate Maintainer Information
 
@@ -36,7 +36,7 @@ jobs:
 
     steps:
       - name: Run cleanowners action
-        uses: github/cleanowners@v1
+        uses: github-community-projects/cleanowners@v1
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           ORGANIZATION: <YOUR_ORGANIZATION_GOES_HERE>
@@ -46,4 +46,4 @@ This workflow, triggered by scheduled runs, ensures that the CODEOWNERS file is 
 
 ## Dive in
 
-With tools like `cleanowners`, the task of managing CODEOWNERS files becomes actively managed instead of ignored, allowing maintainers to focus on what matters most: building and nurturing thriving software projects. By embracing clear and accurate ownership documentation practices, software projects can continue to flourish, guided by clear ownership and collaboration principles. Check out [the repository](https://github.com/github/cleanowners) for more information on how to configure and set up the action.
+With tools like `cleanowners`, the task of managing CODEOWNERS files becomes actively managed instead of ignored, allowing maintainers to focus on what matters most: building and nurturing thriving software projects. By embracing clear and accurate ownership documentation practices, software projects can continue to flourish, guided by clear ownership and collaboration principles. Check out [the repository](https://github.com/github-community-projects/cleanowners) for more information on how to configure and set up the action.
