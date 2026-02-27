@@ -46,7 +46,7 @@ In addition to the information in this repository, we've also released a number 
 - [github/contributors](https://github.com/github/contributors) - Given an organization or repository, produces information about the contributors over the specified time period.
 - [github/evergreen](https://github.com/github/evergreen) - Enable automated security updates and open a issue/PR in repos in an org that have dependency files but no dependabot.yaml file
 - [github/issue-metrics](https://github.com/github/issue-metrics) - Gather metrics on issues/prs/discussions such as time to first response, count of issues opened, closed, etc.
-- [github/stale-repos](https://github.com/github/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
+- [github-community-projects/stale-repos](https://github.com/github-community-projects/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
 - [github/cleanowners](https://github.com/github/cleanowners) - A GitHub Action to suggest removal of non-organization members from CODEOWNERS files
 - [github/empty-repos](https://github.com/github/empty-repos) - Identify and report an organization's repositories that are empty or only contain a README
 - [github/ospo-reusable-workflows](https://github.com/github/ospo-reusable-workflows) - Centralized Reusable GitHub Actions workflows used by the other Actions above (example: release (image and discussion), auto labelling, etc)
