@@ -32,7 +32,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           START_DATE: ${{ env.START_DATE }}
           END_DATE: ${{ env.END_DATE }}
-          REPOSITORY: "github/go-spdx,github-community-projects/internal-contribution-forks,github-community-projects/stale-repos,github-community-projects/evergreen,github-community-projects/issue-metrics,github/github-ospo,github-community-projects/contributors,github/automatic-contrib-prs,github-community-projects/cleanowners,github-community-projects/measure-innersource"
+          REPOSITORY: "github/explore,github/opensource.guide,github/go-spdx,github-community-projects/internal-contribution-forks,github-community-projects/stale-repos,github-community-projects/evergreen,github-community-projects/issue-metrics,github/github-ospo,github-community-projects/contributors,github/automatic-contrib-prs,github-community-projects/cleanowners,github-community-projects/measure-innersource"
           SPONSOR_INFO: "true"
           LINK_TO_PROFILE: "true"
 
