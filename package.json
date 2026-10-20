@@ -10,7 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "markdownlint-cli2": "^0.23.3",
-    "prettier": "^3.9.9"
+    "prettier": "^3.9.10"
   },
   "overrides": {
     "micromark-extension-math": {
